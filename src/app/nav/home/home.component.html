@@ -1,0 +1,97 @@
+<!-- <div class="container-fluid">
+    <div class="card mt-5" style="align-items: center;">
+      <h1>FOMU YA USAJILI KWA MTUMIAJI</h1>
+    </div>
+  
+    <div class="card mt-2"> -->
+      <!-- <form #registerForm="ngForm" (ngSubmit)="register(registerForm)"> -->
+        <!-- <div class="form-group" style="padding: 10px;">
+          <label for="name">JINA KAMILI :</label>
+          <input type="text" #name (ngModel)="name" name="name" id="name" class="form-control w-50" placeholder="Weka Jina Kamili">
+        </div>
+        <div class="form-group" style="padding: 10px;">
+          <label for="name">JINA LA MADRASA :</label>
+          <input type="text" #address (ngModel)="address" name="address" id="address" class="form-control w-50" placeholder="Weka Jina la Madrasa">
+        </div>
+        <div class="form-group" style="padding: 10px;">
+          <label for="name">NUMBARI YA SIMU :</label>
+          <input type="text" #percentage (ngModel)="percentage" name="percentage" id="percentage" class="form-control w-50" placeholder="Weka Nambari ya Simu">
+        </div>
+        <div class="form-group" style="padding: 10px;">
+          <label for="name">NENO LA SIRI :</label>
+          <input type="password" #address (ngModel)="address" name="address" id="address" class="form-control w-50" placeholder="Weka Neno la Siri">
+        </div>
+        <div class="form-group" style="padding: 10px;">
+          <label for="name">MWAKA ILIYOANZISHWA :</label>
+          <input type="text" #percentage (ngModel)="percentage" name="percentage" id="percentage" class="form-control w-50" placeholder="Weka Mwaka iliyoanzishwa">
+        </div>
+        <div class="form-group" style="padding: 10px;">
+          <input type="submit" value="JISAJILI" class="btn btn-primary w-10">
+        </div> -->
+      <!-- </form> -->
+    <!-- </div>
+  
+    <div> -->
+      <!-- <table class="table table-bordered mt-5">
+        <thead class="thead">
+          <tr>
+            <th>Roll Number</th>
+            <th>Student Name</th>
+            <th>Student Address</th>
+            <th>Student Percentage</th>
+            <th>Edit</th>
+            <th>Delete</th>
+          </tr>
+        </thead>
+        <tbody class="tbody">
+          <tr *ngFor="let student of studentDetail">
+            <td>{{student.rollNumber}}</td>
+            <td>{{student.name}}</td>
+            <td>{{student.address}}</td>
+            <td>{{student.percentage}}</td>
+            <th><button class="btn btn-primary">Edit</button></th>
+            <th><button class="btn btn-danger" (click)="deleteStudent(student)">Delete</button></th>
+          </tr>
+        </tbody>
+      </table> -->
+    <!-- </div>
+</div> -->
+
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+      <mat-card class="example-card">
+        <div class="card mb-2" style="align-items: center;">
+          <h1>FOMU YA USAJILI KWA MTUMIAJI</h1>
+        </div>
+        <form #registerForm="ngForm" (ngSubmit)="register(registerForm)">
+          <!-- <div class="form-group" style="padding: 10px;">
+            <label for="name">JINA KAMILI :</label>
+            <input type="text" #fullName (ngModel)="fullName" name="fullName" id="fullName" class="form-control" placeholder="Weka Jina Kamili">
+          </div>
+          <div class="form-group" style="padding: 10px;">
+            <label for="name">JINA LA MADRASA :</label>
+            <input type="text" #madrasaName (ngModel)="madrasaName" name="madrasaName" id="madrasaName" class="form-control" placeholder="Weka Jina la Madrasa">
+          </div> -->
+          <div class="form-group" style="padding: 10px;">
+            <label for="name">NAMBARI YA SIMU :</label>
+            <input type="text" #phoneNumber (ngModel)="phoneNumber" name="phoneNumber" id="phoneNumber" class="form-control" placeholder="Weka Nambari ya Simu">
+          </div>
+          <div class="form-group" style="padding: 10px;">
+            <label for="name">NENO LA SIRI :</label>
+            <input type="password" #password (ngModel)="password" name="password" id="password" class="form-control" placeholder="Weka Neno la Siri">
+          </div>
+          <!-- <div class="form-group" style="padding: 10px;">
+            <label for="name">MWAKA ILIYOANZISHWA :</label>
+            <input type="text" #startYear (ngModel)="startYear" name="startYear" id="startYear" class="form-control" placeholder="Weka Mwaka iliyoanzishwa">
+          </div> -->
+          <div class="form-group" style="padding: 10px;">
+            <input type="submit" value="JISAJILI" class="btn btn-primary w-25" routerLink="/main">
+          </div>
+        </form>
+      </mat-card>
+      </div>
+      <div class="col-md-3"></div>
+  </div>
+</div>

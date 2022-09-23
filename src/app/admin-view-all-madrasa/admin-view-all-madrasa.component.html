@@ -1,0 +1,49 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a routerLink="/adminviewall" routerLinkActive="active" class="nav-link">View Madrasat </a>
+        </li>
+
+        <li class="nav-item">
+            <a routerLink="/admincreate" routerLinkActive="active" class="nav-link">Add Madrasat </a>
+        </li>
+    </ul>
+</nav>
+<div class="container">
+<h2>ORODHA YA MADRASAT</h2>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>JINA LA MADRASAT</th>
+            <th>MTAA</th>
+            <th>SHEHIA </th>
+            <th>WILAYA</th>
+            <th>MKOA</th>
+            <th>TAREHE USAJILI</th>
+            <th>MWALIMU MKUU</th>
+            <th>MWALIMU MSAIDIZI</th>
+            <th>KATIBU</th>
+            <th>MSHIKA FEDHA</th>
+            <th>KITENDO</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let madra of madrasat">
+            <td>{{ madra.name }}</td>
+            <td>{{madra.street }}</td>
+            <td>{{madra.shehia}}</td>
+            <td>{{madra.district}}</td>
+            <td>{{madra.region}}</td>
+            <td>{{madra.regYear}}</td>
+            <td>{{madra.headTeacher}}</td>
+            <td>{{madra.assisTeacher}}</td>
+            <td>{{madra.katibu}}</td>
+            <td>{{madra.accountant}}</td>
+            <td>
+                <button (click)="updateMadrasa(madra.madId)" class="btn btn-info">SAHIHISHA</button>
+                <!-- <button (click)="deleteMadrasa(madra.madId)" class="btn btn-danger ml-1">FUTA</button> -->
+            </td>
+        </tr>
+    </tbody>
+</table>
+</div>

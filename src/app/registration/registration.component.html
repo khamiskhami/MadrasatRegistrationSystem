@@ -1,0 +1,133 @@
+<div class="container-fluid">
+    <!-- <div class="row">
+      <div class="col-md-3"></div> -->
+      <!-- <div class="col-md-6"> -->
+        <mat-card class="example-card">
+          <div class="card mb-2" style="align-items: center;">
+            <h1>FOMU YA USAJILI WA MADRASAT </h1>
+          </div>
+          <form #madrasatForm="ngForm" (ngSubmit)="register(madrasatForm)">
+
+
+            <h1 style="font-family: courier;"><b>KUHUSU TAARIFA ZA MADRASAT</b></h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">JINA LA MADRASA :</label>
+                    <input type="text" #name (ngModel)="name" name="name" id="name" class="form-control" placeholder="Weka Jina la Madrasa">
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">WILAYA :</label>
+                    <input type="text" #district (ngModel)="district" name="district" id="district" class="form-control" placeholder="Weka Wilaya">
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">MTAA :</label>
+                    <input type="text" #street (ngModel)="street" name="street" id="street" class="form-control" placeholder="Weka Jina La Mtaa">
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">MKOA :</label>
+                    <input type="text" #region (ngModel)="region" name="region" id="region" class="form-control" placeholder="Weka Mkoa">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">SHEHIA :</label>
+                    <input type="text" #shehia (ngModel)="shehia" name="shehia" id="shehia" class="form-control" placeholder="Weka Shehia">
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">TAREHE YA USAJILI :</label>
+                    <input type="text" #regYear (ngModel)="regYear" name="regYear" id="regYear" class="form-control" placeholder="Weka Tarehe Ya Maombi">
+                </div>
+            </div>
+        </div>
+    
+
+        <h1 style="font-family: courier;"><b>KUHUSU TAARIFA ZA UONGOZI</b></h1>
+
+        <div class="row">
+
+        <div class="col-md-4">
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">MWALIMU MKUU :</label>
+                <input type="text" #headTeacher (ngModel)="headTeacher" name="headTeacher" id="headTeacher" class="form-control" placeholder="Weka Jina la Mwalimu Mkuu">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <label for="name">MSHIKA FEDHA :</label>
+                <input type="text" #accountant (ngModel)="accountant" name="accountant" id="accountant" class="form-control" placeholder="Weka Jina la mshika fedha">
+              </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">MWALIMU MSAIDIZI :</label>
+                <input type="text" #assisTeacher (ngModel)="assisTeacher" name="assisTeacher" id="assisTeacher" class="form-control" placeholder="Weka Jina la Mwalimu Msaidizi">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <input type="submit" value="JISAJILI" class="btn btn-primary w-50 mt-4">
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">KATIBU :</label>
+                <input type="text" #katibu (ngModel)="katibu" name="katibu" id="katibu" class="form-control" placeholder="Weka Jina Katibu">
+              </div>
+            <!-- <div class="form-group" style="padding: 10px;">
+                <label for="name">TAREHE YA USAJILI :</label>
+                <input type="text" #regYear (ngModel)="regYear" name="regYear" id="regYear" class="form-control" placeholder="Weka Tarehe Ya Maombi">
+            </div> -->
+        </div>
+    </div>
+    </form>
+            
+            <!-- <div class="form-group" style="padding: 10px;">
+              <label for="name">JINA LA MADRASA :</label>
+              <input type="text" #name (ngModel)="name" name="name" id="name" class="form-control" placeholder="Weka Jina la Madrasa">
+            </div>
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">MTAA :</label>
+                <input type="text" #street (ngModel)="street" name="street" id="street" class="form-control" placeholder="Weka Jina La Mtaa">
+              </div>
+            <div class="form-group" style="padding: 10px;">
+              <label for="name">SHEHIA :</label>
+              <input type="text" #shehia (ngModel)="shehia" name="shehia" id="shehia" class="form-control" placeholder="Weka Shehia">
+            </div>
+            <div class="form-group" style="padding: 10px;">
+              <label for="name">WILAYA :</label>
+              <input type="text" #district (ngModel)="district" name="district" id="district" class="form-control" placeholder="Weka Wilaya">
+            </div>
+            <div class="form-group" style="padding: 10px;">
+              <label for="name">MKOA :</label>
+              <input type="text" #region (ngModel)="region" name="region" id="region" class="form-control" placeholder="Weka Mkoa">
+            </div>
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">TAREHE YA USAJILI :</label>
+                <input type="text" #regYear (ngModel)="regYear" name="regYear" id="regYear" class="form-control" placeholder="Weka Tarehe Ya Maombi">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <label for="name">MWALIMU MKUU :</label>
+                <input type="text" #headTeacher (ngModel)="headTeacher" name="headTeacher" id="headTeacher" class="form-control" placeholder="Weka Jina la Mwalimu Mkuu">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <label for="name">MWALIMU MSAIDIZI :</label>
+                <input type="text" #assisTeacher (ngModel)="assisTeacher" name="assisTeacher" id="assisTeacher" class="form-control" placeholder="Weka Jina la Mwalimu Msaidizi">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <label for="name">KATIBU :</label>
+                <input type="text" #katibu (ngModel)="katibu" name="katibu" id="katibu" class="form-control" placeholder="Weka Jina Katibu">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <label for="name">MSHIKA FEDHA :</label>
+                <input type="text" #accountant (ngModel)="accountant" name="accountant" id="accountant" class="form-control" placeholder="Weka Jina la mshika fedha">
+              </div>
+            <div class="form-group" style="padding: 10px;">
+              <input type="submit" value="JISAJILI" class="btn btn-primary w-25">
+            </div>
+          </form> -->
+        </mat-card>
+        <!-- </div>
+        <div class="col-md-3"></div> -->
+    <!-- </div> -->
+  </div>

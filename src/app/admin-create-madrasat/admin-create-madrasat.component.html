@@ -1,0 +1,123 @@
+<nav class="navbar navbar-expand-sm bg-primary navbar-dark">
+  <ul class="navbar-nav">
+      <li class="nav-item">
+          <a routerLink="/adminviewall" routerLinkActive="active" class="nav-link">View Madrasat </a>
+      </li>
+
+      <li class="nav-item">
+          <a routerLink="/admincreate" routerLinkActive="active" class="nav-link">Add Madrasat </a>
+      </li>
+  </ul>
+</nav>
+<div class="container"> 
+  <h1 style="font-family: courier;"><b>KUHUSU TAARIFA ZA MADRASAT</b></h1>
+    <form (ngSubmit)="onSubmit()">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">JINA LA MADRASA :</label>
+                    <input type="text" [(ngModel)]="madrasatCreate.name" name="name" id="name" class="form-control" placeholder="Weka Jina la Madrasa">
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">WILAYA :</label>
+                    <input type="text" [(ngModel)]="madrasatCreate.district" name="district" id="district" class="form-control" placeholder="Weka Wilaya">
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">MTAA :</label>
+                    <input type="text" [(ngModel)]="madrasatCreate.street" name="street" id="street" class="form-control" placeholder="Weka Jina La Mtaa">
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">MKOA :</label>
+                    <input type="text" [(ngModel)]="madrasatCreate.region" name="region" id="region" class="form-control" placeholder="Weka Mkoa">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">SHEHIA :</label>
+                    <input type="text" [(ngModel)]="madrasatCreate.shehia" name="shehia" id="shehia" class="form-control" placeholder="Weka Shehia">
+                </div>
+                <div class="form-group" style="padding: 10px;">
+                    <label for="name">TAREHE YA USAJILI :</label>
+                    <input type="text" [(ngModel)]="madrasatCreate.regYear" name="regYear" id="regYear" class="form-control" placeholder="Weka Tarehe Ya Maombi">
+                </div>
+            </div>
+        </div>
+    
+
+        <h1 style="font-family: courier;"><b>KUHUSU TAARIFA ZA UONGOZI</b></h1>
+
+        <div class="row">
+
+        <div class="col-md-4">
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">MWALIMU MKUU :</label>
+                <input type="text" [(ngModel)]="madrasatCreate.headTeacher" name="headTeacher" id="headTeacher" class="form-control" placeholder="Weka Jina la Mwalimu Mkuu">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <label for="name">MSHIKA FEDHA :</label>
+                <input type="text" [(ngModel)]="madrasatCreate.accountant" name="accountant" id="accountant" class="form-control" placeholder="Weka Jina la mshika fedha">
+              </div>
+        </div>
+        
+        <div class="col-md-4">
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">MWALIMU MSAIDIZI :</label>
+                <input type="text" [(ngModel)]="madrasatCreate.assisTeacher" name="assisTeacher" id="assisTeacher" class="form-control" placeholder="Weka Jina la Mwalimu Msaidizi">
+              </div>
+              <div class="form-group" style="padding: 10px;">
+                <input type="submit" value="JISAJILI" class="btn btn-primary w-50 mt-4">
+              </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group" style="padding: 10px;">
+                <label for="name">KATIBU :</label>
+                <input type="text" [(ngModel)]="madrasatCreate.katibu" name="katibu" id="katibu" class="form-control" placeholder="Weka Jina Katibu">
+              </div>
+            <!-- <div class="form-group" style="padding: 10px;">
+                <label for="name">TAREHE YA USAJILI :</label>
+                <input type="text" #regYear (ngModel)="regYear" name="regYear" id="regYear" class="form-control" placeholder="Weka Tarehe Ya Maombi">
+            </div> -->
+        </div>
+    </div>
+    </form>
+  
+<!-- 
+  
+   
+     <h1>Write word "Yes" to an appropriate</h1>
+     <div class="container">
+      <table>
+        <tr>
+          <td>None</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Adult education</td>
+          <td></td>
+        </tr>
+        <tr>
+        <td>Primary education</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Secondary education</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>Above secondary education</td>
+        <td>Yes</td>
+      </tr>
+    
+      </table>
+    </div>
+
+      <h1>Have you qualified to get a learner's licence?</h1>
+      <div class="button">
+      <button class="btn btn-primary">YES</button>
+      <button class="btn btn-primary" style="margin-left:450px;">NO</button>
+      </div> -->
+    
+</div>
